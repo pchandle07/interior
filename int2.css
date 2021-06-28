@@ -1,0 +1,60 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 50px;
+}
+
+.gallery {
+    font-weight: bold;
+    font-style: initial;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    background-size: 100%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.gallery {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+    font-size: 600%;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+    .gallery {
+        font-size: 500%;
+    }
+}
